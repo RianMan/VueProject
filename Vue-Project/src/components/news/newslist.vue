@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="page">
       <h1>这是新闻列表页</h1>
   </div>
 </template>

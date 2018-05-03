@@ -1,6 +1,10 @@
 <template>
   <div id="app">
-    <mt-header fixed title="Vue-Project"></mt-header>
+    <mt-header fixed title="Vue-Project">
+			<router-link to="/" slot="left" v-if="$route.path !== '/home'">
+				<mt-button icon="back">返回</mt-button>
+			</router-link>
+		</mt-header>
   
     <router-view/>
     
@@ -27,16 +31,20 @@
 
 <script>
 export default {
-  name: 'App'
-}
+	name: "App"
+};
 </script>
 
 <style>
-*{padding:0;margin:0;list-style:none;}
-.mint-header{
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.mint-header {
   background-color: chocolate;
 }
-.page{
+.page {
   padding-top: 40px;
 }
 </style>
