@@ -67,5 +67,6 @@ export default new Router({
       path: '/product/detail',
       component: ProDetail
     },
-  ]
+  ],
+  linkActiveClass:"mui-active"
 })
