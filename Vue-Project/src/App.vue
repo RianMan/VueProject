@@ -2,7 +2,7 @@
   <div id="app">
     <mt-header fixed title="Vue-Project">
 			<router-link to="/" slot="left" v-if="$route.path !== '/home'">
-				<mt-button icon="back">返回</mt-button>
+				<mt-button @click='$router.go(-1)' icon="back">返回</mt-button>
 			</router-link>
 		</mt-header>
   
@@ -46,5 +46,6 @@ export default {
 }
 .page {
   padding-top: 40px;
+	padding-bottom: 50px;
 }
 </style>

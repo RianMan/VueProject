@@ -61,7 +61,7 @@ export default {
     axios({
       url: "http://www.escook.cn:3000/api/getlunbo"
     }).then(res => {
-      console.log(res);
+      // console.log(res);
       this.photo = res.data.message;
     });
   }
