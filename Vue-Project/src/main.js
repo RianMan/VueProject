@@ -12,9 +12,16 @@ Vue.config.productionTip = false
 
 Vue.use(MintUI)
 /* eslint-disable no-new */
+
+import VuePreview from 'vue-preview'
+Vue.use(VuePreview)
+
+
+import store from "./components/store/store" 
 new Vue({
   el: '#app',
   router,
+  store,
   components: { App },
   template: '<App/>'
 })

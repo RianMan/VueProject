@@ -73,9 +73,10 @@ export default {
 };
 </script>
 
-<style>
+<style >
 .comment {
   margin-bottom: 10px;
+  padding: 0 5px;
 }
 .comment h4 {
   line-height: 50px;

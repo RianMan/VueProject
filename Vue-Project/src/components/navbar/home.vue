@@ -15,16 +15,16 @@
                   </router-link>
                 </li>
 		            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
-                  <a href="#">
+                  <router-link to="/photo">
                     <img src="../../assets/icon/menu2.png" alt="">
-                    <div class="mui-media-body">Email</div>
-                  </a>
+                    <div class="mui-media-body">图片</div>
+                  </router-link>
                 </li>
 		            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
-                  <a href="#">
+                  <router-link to="/product">
                     <img src="../../assets/icon/menu3.png" alt="">
-                    <div class="mui-media-body">Chat</div>
-                  </a>
+                    <div class="mui-media-body">商品</div>
+                  </router-link>
                 </li>
 		            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
                   <a href="#">
@@ -70,7 +70,7 @@ export default {
 
 <style scoped>
 .mint-swipe {
-  height: 200px;
+  height: 160px;
 }
 .mint-swipe img {
   width: 100%;

@@ -51,20 +51,28 @@ export default new Router({
       path: '/news/detail/:id',
       component: NewsDetail
     },
+
+    // 图片列表
     {
-      path: '/photo',
+      path: '/photo/:id',
       component: PhotoList
     },
     {
-      path: '/photo/detail',
+      path: '/photo/',
+      redirect:　'/photo/0'
+    },
+    {
+      path: '/photodetail/:id',
       component: PhotoDetail
     },
+
+
     {
       path: '/product',
       component: ProList
     },
     {
-      path: '/product/detail',
+      path: '/product/detail/:id',
       component: ProDetail
     },
   ],
